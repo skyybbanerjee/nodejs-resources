@@ -1,0 +1,120 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  height: 80vh;
+  background: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Sidebar (User List) */
+.sidebar {
+  width: 25%;
+  background: #2c3e50;
+  color: #ecf0f1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar h3 {
+  margin-top: 0;
+  border-bottom: 1px solid #7f8c8d;
+  padding-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  padding: 10px 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  background: #34495e;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+.sidebar ul li:hover {
+  background: #1abc9c;
+  cursor: pointer;
+}
+
+/* Chat Section */
+.chat-section {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  background: #ecf0f1;
+}
+
+.chat-window {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  background: #ffffff;
+  border-bottom: 2px solid #bdc3c7;
+}
+
+.chat-message {
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  background: #1abc9c;
+  color: white;
+  border-radius: 20px;
+  width: fit-content;
+}
+
+.chat-message:nth-child(even) {
+  background: #3498db;
+}
+
+.message-form {
+  display: flex;
+  padding: 15px;
+  background: #ecf0f1;
+  border-top: 2px solid #bdc3c7;
+}
+
+.message-form input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #bdc3c7;
+  border-radius: 20px;
+  outline: none;
+  margin-right: 10px;
+}
+
+.message-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background: #2c3e50;
+  color: #ecf0f1;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.message-form button:hover {
+  background: #1abc9c;
+}
